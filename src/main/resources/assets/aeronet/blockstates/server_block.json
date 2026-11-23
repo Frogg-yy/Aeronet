@@ -1,0 +1,819 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "facing": "north"
+      },
+      "apply": {
+        "model": "aeronet:block/server/body"
+      }
+    },
+    {
+      "when": {
+        "facing": "south"
+      },
+      "apply": {
+        "model": "aeronet:block/server/body",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "west"
+      },
+      "apply": {
+        "model": "aeronet:block/server/body",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "east"
+      },
+      "apply": {
+        "model": "aeronet:block/server/body",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "slot_0": "1"
+      },
+      "apply": {
+        "model": "aeronet:block/server/gyro_slot_0"
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "slot_0": "1"
+      },
+      "apply": {
+        "model": "aeronet:block/server/gyro_slot_0",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "slot_0": "1"
+      },
+      "apply": {
+        "model": "aeronet:block/server/gyro_slot_0",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "slot_0": "1"
+      },
+      "apply": {
+        "model": "aeronet:block/server/gyro_slot_0",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "slot_0": "2"
+      },
+      "apply": {
+        "model": "aeronet:block/server/altitude_slot_0"
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "slot_0": "2"
+      },
+      "apply": {
+        "model": "aeronet:block/server/altitude_slot_0",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "slot_0": "2"
+      },
+      "apply": {
+        "model": "aeronet:block/server/altitude_slot_0",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "slot_0": "2"
+      },
+      "apply": {
+        "model": "aeronet:block/server/altitude_slot_0",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "slot_1": "1"
+      },
+      "apply": {
+        "model": "aeronet:block/server/gyro_slot_1"
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "slot_1": "1"
+      },
+      "apply": {
+        "model": "aeronet:block/server/gyro_slot_1",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "slot_1": "1"
+      },
+      "apply": {
+        "model": "aeronet:block/server/gyro_slot_1",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "slot_1": "1"
+      },
+      "apply": {
+        "model": "aeronet:block/server/gyro_slot_1",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "slot_1": "2"
+      },
+      "apply": {
+        "model": "aeronet:block/server/altitude_slot_1"
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "slot_1": "2"
+      },
+      "apply": {
+        "model": "aeronet:block/server/altitude_slot_1",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "slot_1": "2"
+      },
+      "apply": {
+        "model": "aeronet:block/server/altitude_slot_1",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "slot_1": "2"
+      },
+      "apply": {
+        "model": "aeronet:block/server/altitude_slot_1",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "slot_2": "1"
+      },
+      "apply": {
+        "model": "aeronet:block/server/gyro_slot_2"
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "slot_2": "1"
+      },
+      "apply": {
+        "model": "aeronet:block/server/gyro_slot_2",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "slot_2": "1"
+      },
+      "apply": {
+        "model": "aeronet:block/server/gyro_slot_2",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "slot_2": "1"
+      },
+      "apply": {
+        "model": "aeronet:block/server/gyro_slot_2",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "slot_2": "2"
+      },
+      "apply": {
+        "model": "aeronet:block/server/altitude_slot_2"
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "slot_2": "2"
+      },
+      "apply": {
+        "model": "aeronet:block/server/altitude_slot_2",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "slot_2": "2"
+      },
+      "apply": {
+        "model": "aeronet:block/server/altitude_slot_2",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "slot_2": "2"
+      },
+      "apply": {
+        "model": "aeronet:block/server/altitude_slot_2",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "slot_3": "1"
+      },
+      "apply": {
+        "model": "aeronet:block/server/gyro_slot_3"
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "slot_3": "1"
+      },
+      "apply": {
+        "model": "aeronet:block/server/gyro_slot_3",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "slot_3": "1"
+      },
+      "apply": {
+        "model": "aeronet:block/server/gyro_slot_3",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "slot_3": "1"
+      },
+      "apply": {
+        "model": "aeronet:block/server/gyro_slot_3",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "slot_3": "2"
+      },
+      "apply": {
+        "model": "aeronet:block/server/altitude_slot_3"
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "slot_3": "2"
+      },
+      "apply": {
+        "model": "aeronet:block/server/altitude_slot_3",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "slot_3": "2"
+      },
+      "apply": {
+        "model": "aeronet:block/server/altitude_slot_3",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "slot_3": "2"
+      },
+      "apply": {
+        "model": "aeronet:block/server/altitude_slot_3",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "slot_0": "3"
+      },
+      "apply": {
+        "model": "aeronet:block/server/compass_slot_0"
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "slot_0": "3"
+      },
+      "apply": {
+        "model": "aeronet:block/server/compass_slot_0",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "slot_0": "3"
+      },
+      "apply": {
+        "model": "aeronet:block/server/compass_slot_0",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "slot_0": "3"
+      },
+      "apply": {
+        "model": "aeronet:block/server/compass_slot_0",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "slot_1": "3"
+      },
+      "apply": {
+        "model": "aeronet:block/server/compass_slot_1"
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "slot_1": "3"
+      },
+      "apply": {
+        "model": "aeronet:block/server/compass_slot_1",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "slot_1": "3"
+      },
+      "apply": {
+        "model": "aeronet:block/server/compass_slot_1",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "slot_1": "3"
+      },
+      "apply": {
+        "model": "aeronet:block/server/compass_slot_1",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "slot_2": "3"
+      },
+      "apply": {
+        "model": "aeronet:block/server/compass_slot_2"
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "slot_2": "3"
+      },
+      "apply": {
+        "model": "aeronet:block/server/compass_slot_2",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "slot_2": "3"
+      },
+      "apply": {
+        "model": "aeronet:block/server/compass_slot_2",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "slot_2": "3"
+      },
+      "apply": {
+        "model": "aeronet:block/server/compass_slot_2",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "slot_3": "3"
+      },
+      "apply": {
+        "model": "aeronet:block/server/compass_slot_3"
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "slot_3": "3"
+      },
+      "apply": {
+        "model": "aeronet:block/server/compass_slot_3",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "slot_3": "3"
+      },
+      "apply": {
+        "model": "aeronet:block/server/compass_slot_3",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "slot_3": "3"
+      },
+      "apply": {
+        "model": "aeronet:block/server/compass_slot_3",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "slot_0": "4"
+      },
+      "apply": {
+        "model": "aeronet:block/server/gps_slot_0"
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "slot_0": "4"
+      },
+      "apply": {
+        "model": "aeronet:block/server/gps_slot_0",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "slot_0": "4"
+      },
+      "apply": {
+        "model": "aeronet:block/server/gps_slot_0",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "slot_0": "4"
+      },
+      "apply": {
+        "model": "aeronet:block/server/gps_slot_0",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "slot_1": "4"
+      },
+      "apply": {
+        "model": "aeronet:block/server/gps_slot_1"
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "slot_1": "4"
+      },
+      "apply": {
+        "model": "aeronet:block/server/gps_slot_1",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "slot_1": "4"
+      },
+      "apply": {
+        "model": "aeronet:block/server/gps_slot_1",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "slot_1": "4"
+      },
+      "apply": {
+        "model": "aeronet:block/server/gps_slot_1",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "slot_2": "4"
+      },
+      "apply": {
+        "model": "aeronet:block/server/gps_slot_2"
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "slot_2": "4"
+      },
+      "apply": {
+        "model": "aeronet:block/server/gps_slot_2",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "slot_2": "4"
+      },
+      "apply": {
+        "model": "aeronet:block/server/gps_slot_2",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "slot_2": "4"
+      },
+      "apply": {
+        "model": "aeronet:block/server/gps_slot_2",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "slot_3": "4"
+      },
+      "apply": {
+        "model": "aeronet:block/server/gps_slot_3"
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "slot_3": "4"
+      },
+      "apply": {
+        "model": "aeronet:block/server/gps_slot_3",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "slot_3": "4"
+      },
+      "apply": {
+        "model": "aeronet:block/server/gps_slot_3",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "slot_3": "4"
+      },
+      "apply": {
+        "model": "aeronet:block/server/gps_slot_3",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "slot_0": "5"
+      },
+      "apply": {
+        "model": "aeronet:block/server/link_slot_0"
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "slot_0": "5"
+      },
+      "apply": {
+        "model": "aeronet:block/server/link_slot_0",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "slot_0": "5"
+      },
+      "apply": {
+        "model": "aeronet:block/server/link_slot_0",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "slot_0": "5"
+      },
+      "apply": {
+        "model": "aeronet:block/server/link_slot_0",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "slot_1": "5"
+      },
+      "apply": {
+        "model": "aeronet:block/server/link_slot_1"
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "slot_1": "5"
+      },
+      "apply": {
+        "model": "aeronet:block/server/link_slot_1",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "slot_1": "5"
+      },
+      "apply": {
+        "model": "aeronet:block/server/link_slot_1",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "slot_1": "5"
+      },
+      "apply": {
+        "model": "aeronet:block/server/link_slot_1",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "slot_2": "5"
+      },
+      "apply": {
+        "model": "aeronet:block/server/link_slot_2"
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "slot_2": "5"
+      },
+      "apply": {
+        "model": "aeronet:block/server/link_slot_2",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "slot_2": "5"
+      },
+      "apply": {
+        "model": "aeronet:block/server/link_slot_2",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "slot_2": "5"
+      },
+      "apply": {
+        "model": "aeronet:block/server/link_slot_2",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "slot_3": "5"
+      },
+      "apply": {
+        "model": "aeronet:block/server/link_slot_3"
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "slot_3": "5"
+      },
+      "apply": {
+        "model": "aeronet:block/server/link_slot_3",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "slot_3": "5"
+      },
+      "apply": {
+        "model": "aeronet:block/server/link_slot_3",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "slot_3": "5"
+      },
+      "apply": {
+        "model": "aeronet:block/server/link_slot_3",
+        "y": 90
+      }
+    }
+  ]
+}

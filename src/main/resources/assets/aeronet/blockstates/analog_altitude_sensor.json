@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "aeronet:block/analog_altitude_sensor/item",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "aeronet:block/analog_altitude_sensor/item"
+    },
+    "facing=west": {
+      "model": "aeronet:block/analog_altitude_sensor/item",
+      "y": 90
+    },
+    "facing=east": {
+      "model": "aeronet:block/analog_altitude_sensor/item",
+      "y": 270
+    }
+  }
+}

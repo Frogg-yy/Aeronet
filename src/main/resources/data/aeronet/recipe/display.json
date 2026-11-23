@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "create:transmitter"
+    },
+    {
+      "item": "create:andesite_alloy"
+    },
+    {
+      "item": "create:electron_tube"
+    }
+  ],
+  "result": {
+    "id": "aeronet:display",
+    "count": 2
+  }
+}

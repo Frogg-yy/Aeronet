@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "A  ",
+    "CBD"
+  ],
+  "key": {
+    "A": {
+      "item": "create:transmitter"
+    },
+    "B": {
+      "item": "simulated:laser_pointer"
+    },
+    "C": {
+      "item": "create:brass_casing"
+    },
+    "D": {
+      "item": "minecraft:glass_pane"
+    }
+  },
+  "result": {
+    "id": "aeronet:surface_scanner",
+    "count": 1
+  }
+}

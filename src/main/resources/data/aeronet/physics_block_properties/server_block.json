@@ -1,0 +1,8 @@
+{
+  "selector": "aeronet:server_block",
+  "priority": 1000,
+  "properties": {
+    "sable:mass": 2.0,
+    "sable:volume": 1.0
+  }
+}

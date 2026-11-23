@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "axis=x,enabled=false,reversed=false": {
+      "model": "aeronet:block/analog_gearshift/block",
+      "y": 90
+    },
+    "axis=y,enabled=false,reversed=false": {
+      "model": "aeronet:block/analog_gearshift/block",
+      "x": 90
+    },
+    "axis=z,enabled=false,reversed=false": {
+      "model": "aeronet:block/analog_gearshift/block",
+      "y": 180
+    },
+    "axis=x,enabled=true,reversed=false": {
+      "model": "aeronet:block/analog_gearshift/block_enabled",
+      "y": 90
+    },
+    "axis=y,enabled=true,reversed=false": {
+      "model": "aeronet:block/analog_gearshift/block_enabled",
+      "x": 90
+    },
+    "axis=z,enabled=true,reversed=false": {
+      "model": "aeronet:block/analog_gearshift/block_enabled",
+      "y": 180
+    },
+    "axis=x,enabled=false,reversed=true": {
+      "model": "aeronet:block/analog_gearshift/block_reversed",
+      "y": 90
+    },
+    "axis=y,enabled=false,reversed=true": {
+      "model": "aeronet:block/analog_gearshift/block_reversed",
+      "x": 90
+    },
+    "axis=z,enabled=false,reversed=true": {
+      "model": "aeronet:block/analog_gearshift/block_reversed",
+      "y": 180
+    },
+    "axis=x,enabled=true,reversed=true": {
+      "model": "aeronet:block/analog_gearshift/block_on",
+      "y": 90
+    },
+    "axis=y,enabled=true,reversed=true": {
+      "model": "aeronet:block/analog_gearshift/block_on",
+      "x": 90
+    },
+    "axis=z,enabled=true,reversed=true": {
+      "model": "aeronet:block/analog_gearshift/block_on",
+      "y": 180
+    }
+  }
+}

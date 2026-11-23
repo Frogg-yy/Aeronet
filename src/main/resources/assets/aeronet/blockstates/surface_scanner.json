@@ -1,0 +1,33 @@
+{
+  "variants": {
+    "facing=up,rotation=up":    { "model": "aeronet:block/surface_scanner/block" },
+    "facing=up,rotation=right": { "model": "aeronet:block/surface_scanner/block", "y": 90 },
+    "facing=up,rotation=down":  { "model": "aeronet:block/surface_scanner/block", "y": 180 },
+    "facing=up,rotation=left":  { "model": "aeronet:block/surface_scanner/block", "y": 270 },
+
+    "facing=down,rotation=up":    { "model": "aeronet:block/surface_scanner/block_ceil" },
+    "facing=down,rotation=right": { "model": "aeronet:block/surface_scanner/block_ceil", "y": 90 },
+    "facing=down,rotation=down":  { "model": "aeronet:block/surface_scanner/block_ceil", "y": 180 },
+    "facing=down,rotation=left":  { "model": "aeronet:block/surface_scanner/block_ceil", "y": 270 },
+
+    "facing=south,rotation=up":    { "model": "aeronet:block/surface_scanner/block_up" },
+    "facing=south,rotation=down":  { "model": "aeronet:block/surface_scanner/block_down" },
+    "facing=south,rotation=left":  { "model": "aeronet:block/surface_scanner/block_left" },
+    "facing=south,rotation=right": { "model": "aeronet:block/surface_scanner/block_right" },
+
+    "facing=west,rotation=up":    { "model": "aeronet:block/surface_scanner/block_up",    "y": 90 },
+    "facing=west,rotation=down":  { "model": "aeronet:block/surface_scanner/block_down",  "y": 90 },
+    "facing=west,rotation=left":  { "model": "aeronet:block/surface_scanner/block_left",  "y": 90 },
+    "facing=west,rotation=right": { "model": "aeronet:block/surface_scanner/block_right", "y": 90 },
+
+    "facing=north,rotation=up":    { "model": "aeronet:block/surface_scanner/block_up",    "y": 180 },
+    "facing=north,rotation=down":  { "model": "aeronet:block/surface_scanner/block_down",  "y": 180 },
+    "facing=north,rotation=left":  { "model": "aeronet:block/surface_scanner/block_left",  "y": 180 },
+    "facing=north,rotation=right": { "model": "aeronet:block/surface_scanner/block_right", "y": 180 },
+
+    "facing=east,rotation=up":    { "model": "aeronet:block/surface_scanner/block_up",    "y": 270 },
+    "facing=east,rotation=down":  { "model": "aeronet:block/surface_scanner/block_down",  "y": 270 },
+    "facing=east,rotation=left":  { "model": "aeronet:block/surface_scanner/block_left",  "y": 270 },
+    "facing=east,rotation=right": { "model": "aeronet:block/surface_scanner/block_right", "y": 270 }
+  }
+}

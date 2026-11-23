@@ -1,0 +1,26 @@
+{
+  "variants": {
+    "facing=up": {
+      "model": "aeronet:block/analog_link_top"
+    },
+    "facing=down": {
+      "model": "aeronet:block/analog_link_top",
+      "x": 180
+    },
+    "facing=north": {
+      "model": "aeronet:block/analog_link_side",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "aeronet:block/analog_link_side"
+    },
+    "facing=west": {
+      "model": "aeronet:block/analog_link_side",
+      "y": 90
+    },
+    "facing=east": {
+      "model": "aeronet:block/analog_link_side",
+      "y": 270
+    }
+  }
+}

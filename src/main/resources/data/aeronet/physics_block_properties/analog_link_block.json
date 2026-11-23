@@ -1,0 +1,8 @@
+{
+  "selector": "aeronet:analog_link_block",
+  "priority": 1000,
+  "properties": {
+    "sable:mass": 0.0,
+    "sable:volume": 1.0
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "aeronet:block/analog_gyro/item",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "aeronet:block/analog_gyro/item"
+    },
+    "facing=west": {
+      "model": "aeronet:block/analog_gyro/item",
+      "y": 90
+    },
+    "facing=east": {
+      "model": "aeronet:block/analog_gyro/item",
+      "y": 270
+    }
+  }
+}

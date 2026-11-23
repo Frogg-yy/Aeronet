@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "aeronet:servo",
+    "aeronet:server_block",
+    "aeronet:display",
+    "aeronet:analog_gearshift"
+  ]
+}

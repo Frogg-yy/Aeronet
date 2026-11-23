@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "create:transmitter"
+    },
+    {
+      "item": "create:gearshift"
+    },
+    {
+      "item": "create:clutch"
+    }
+  ],
+  "result": {
+    "id": "aeronet:analog_gearshift",
+    "count": 1
+  }
+}
