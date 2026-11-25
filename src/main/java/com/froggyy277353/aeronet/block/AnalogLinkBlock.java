@@ -65,7 +65,6 @@ public class AnalogLinkBlock extends Block implements EntityBlock, IWrenchable {
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext context)
     {
-
         return defaultBlockState().setValue(FACING, context.getClickedFace());
     }
     @Override
@@ -83,7 +82,6 @@ public class AnalogLinkBlock extends Block implements EntityBlock, IWrenchable {
 
     private static <A extends BlockEntity, E extends BlockEntity> BlockEntityTicker<A> createTickerHelper(
             BlockEntityType<A> serverType, BlockEntityType<E> entityType, BlockEntityTicker<? super E> ticker) {
-        //noinspection unchecked
         return serverType == entityType ? (BlockEntityTicker<A>) ticker : null;
     }
 

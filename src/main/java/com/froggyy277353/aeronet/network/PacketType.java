@@ -8,5 +8,6 @@ public enum PacketType
     DISTANCE,
     SERVO,
     DISPLAY,
-    SCANNER
+    SCANNER,
+    BUTTON
 }

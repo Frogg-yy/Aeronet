@@ -94,11 +94,11 @@ public class SurfaceScannerRenderer implements BlockEntityRenderer<SurfaceScanne
         if (bufferSource instanceof MultiBufferSource.BufferSource bs) {
             bs.endBatch(renderType);
         }
-        float beamDist = be.getInterpolatedBeamDist(partialTick);
-        if (be.isOn())
-        {
+        if (be.isOn()) {
+            float beamDist = be.getInterpolatedBeamDist(partialTick);
             renderScanPyramid(poseStack, bufferSource, be.getFov(), beamDist, be.getGridSize());
         }
+
 
         poseStack.popPose();
     }

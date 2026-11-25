@@ -68,4 +68,7 @@ public class ModItems {
 
     public static final DeferredItem<BlockItem> SCANNER =
             ITEMS.registerSimpleBlockItem("surface_scanner", ModBlocks.SCANNER);
+
+    public static final DeferredItem<BlockItem> BUTTON =
+            ITEMS.registerSimpleBlockItem("button", ModBlocks.BUTTON);
 }

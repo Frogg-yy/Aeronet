@@ -1,4 +1,4 @@
-package com.froggyy277353.aeronet.widgets.booleanNodes;
+package com.froggyy277353.aeronet.widgets.booleans;
 
 import com.froggyy277353.aeronet.network.NodeType;
 import com.froggyy277353.aeronet.widgets.Node;

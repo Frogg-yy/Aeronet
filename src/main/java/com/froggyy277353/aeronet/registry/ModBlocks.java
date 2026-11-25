@@ -33,4 +33,7 @@ public class ModBlocks {
     public static final DeferredBlock<Block> SCANNER  =
             BLOCKS.register("surface_scanner", () -> new SurfaceScannerBlock(BlockBehaviour.Properties.of().noOcclusion()));
 
+    public static final DeferredBlock<Block> BUTTON =
+            BLOCKS.register("button", () -> new ButtonBlock(BlockBehaviour.Properties.of().noOcclusion()));
+
 }

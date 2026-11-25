@@ -2,8 +2,8 @@ package com.froggyy277353.aeronet.client.gui;
 
 import com.froggyy277353.aeronet.network.NodesData;
 import com.froggyy277353.aeronet.widgets.*;
-import com.froggyy277353.aeronet.widgets.booleanNodes.BooleanFloatNode;
-import com.froggyy277353.aeronet.widgets.booleanNodes.NotNode;
+import com.froggyy277353.aeronet.widgets.booleans.BooleanFloatNode;
+import com.froggyy277353.aeronet.widgets.booleans.NotNode;
 import com.froggyy277353.aeronet.widgets.logical.*;
 import com.froggyy277353.aeronet.widgets.math.*;
 import com.froggyy277353.aeronet.widgets.physics.*;
@@ -119,57 +119,12 @@ public class GuiUtils {
             return value;
         }
     }
-    public static Node createNodeByData(NodesData data)
-    {
-        Node node = switch (data.nodeType()) {
-            case MAP -> new MapNode(data.id(), data.x(), data.y(), data.inputs(), data.outputs(), data.width(), data.height(), data.inputArray(), data.outputArray());
-            case ADD -> new AddNode(data.id(), data.x(), data.y(), data.inputs(), data.outputs(), data.width(), data.height(), data.inputArray(), data.outputArray());
-            case DIVIDE -> new DivideNode(data.id(),  data.x(), data.y(), data.inputs(), data.outputs(), data.width(), data.height(), data.inputArray(), data.outputArray());
-            case MULTIPLY -> new MultiplyNode(data.id(),  data.x(), data.y(), data.inputs(), data.outputs(), data.width(), data.height(), data.inputArray(), data.outputArray());
-            case INT -> new IntNode(data.id(),  data.x(), data.y(), data.inputs(), data.outputs(), data.width(), data.height(), data.inputArray(), data.outputArray());
-            case SUBTRACT -> new SubtractNode(data.id(),  data.x(), data.y(), data.inputs(), data.outputs(), data.width(), data.height(), data.inputArray(), data.outputArray());
-            case ANALOG_LINK -> new AnalogLinkNode(data.id(),  data.x(), data.y(), data.inputs(), data.outputs(), data.width(), data.height(), data.inputArray(), data.outputArray());
-            case DISPLAY -> new DisplayNode(data.id(), data.x(), data.y(), data.inputs(), data.outputs(), data.width(), data.height(), data.inputArray(), data.outputArray());
-            case IMPULSE -> new ImpulseNode(data.id(), data.x(), data.y(), data.inputs(), data.outputs(), data.width(), data.height(), data.inputArray(), data.outputArray());
-            case TIMER -> new TimerNode(data.id(), data.x(), data.y(), data.inputs(), data.outputs(), data.width(), data.height(), data.inputArray(), data.outputArray());
-            case SIN, COS, TAN, ASIN, ACOS, ATAN -> new TrigonometryNode(data.id(), data.x(), data.y(), data.inputs(), data.outputs(), data.width(), data.height(), data.inputArray(), data.outputArray(), data.nodeType());
-            case EQUALS -> new EqualsNode(data.id(), data.x(), data.y(), data.inputs(), data.outputs(), data.width(), data.height(), data.inputArray(), data.outputArray());
-            case LESS -> new LessNode(data.id(), data.x(), data.y(), data.inputs(), data.outputs(), data.width(), data.height(), data.inputArray(), data.outputArray());
-            case GREATER -> new GreaterNode(data.id(),  data.x(), data.y(), data.inputs(), data.outputs(), data.width(), data.height(), data.inputArray(), data.outputArray());
-            case EQUALS_LESS -> new EqualsLessNode(data.id(), data.x(), data.y(), data.inputs(), data.outputs(), data.width(), data.height(), data.inputArray(), data.outputArray());
-            case EQUALS_GREATER -> new EqualsGreaterNode(data.id(), data.x(), data.y(), data.inputs(), data.outputs(), data.width(), data.height(), data.inputArray(), data.outputArray());
-            case GEARSHIFT -> new GearshiftNode(data.id(),data.x(), data.y(), data.inputs(), data.outputs(), data.width(), data.height(), data.inputArray(), data.outputArray());
-            case SERVO -> new ServoNode(data.id(), data.x(), data.y(), data.inputs(), data.outputs(), data.width(), data.height(), data.inputArray(), data.outputArray());
-            case ALTITUDE -> new AnalogAltitudeNode(data.id(), data.x(), data.y(), data.inputs(), data.outputs(), data.width(), data.height(), data.inputArray(), data.outputArray());
-            case GYRO -> new AnalogGyroNode(data.id(), data.x(), data.y(), data.inputs(), data.outputs(), data.width(), data.height(), data.inputArray(), data.outputArray());
-            case COMPASS -> new CompassNode(data.id(), data.x(), data.y(), data.inputs(), data.outputs(), data.width(), data.height(), data.inputArray(), data.outputArray());
-            case GPS -> new GpsNode(data.id(),  data.x(), data.y(), data.inputs(), data.outputs(), data.width(), data.height(), data.inputArray(), data.outputArray());
-            case LINK -> new LinkNode(data.id(), data.x(), data.y(), data.inputs(), data.outputs(), data.width(), data.height(), data.inputArray(), data.outputArray());
-            case ARRAY_PACK -> new ArrayPackNode(data.id(), data.x(), data.y(), data.inputs(), data.outputs(), data.width(), data.height(), data.inputArray(), data.outputArray());
-            case ARRAY_UNPACK -> new ArrayUnpackNode(data.id(), data.x(), data.y(), data.inputs(), data.outputs(), data.width(), data.height(), data.inputArray(), data.outputArray());
-            case DISPLAY_VALUE -> new DisplayValueNode(data.id(), data.x(), data.y(), data.inputs(), data.outputs(), data.width(), data.height(), data.inputArray(), data.outputArray());
-            case DRAW_PIXEL -> new DrawPixelNode(data.id(), data.x(), data.y(), data.inputs(), data.outputs(), data.width(), data.height(), data.inputArray(), data.outputArray());
-            case DRAW_LINE -> new DrawLineNode(data.id(), data.x(), data.y(), data.inputs(), data.outputs(), data.width(), data.height(), data.inputArray(), data.outputArray());
-            case DRAW_RECT -> new DrawRectNode(data.id(), data.x(), data.y(), data.inputs(), data.outputs(), data.width(), data.height(), data.inputArray(), data.outputArray());
-            case DRAW_CIRCLE -> new DrawCircleNode(data.id(), data.x(), data.y(), data.inputs(), data.outputs(), data.width(), data.height(), data.inputArray(), data.outputArray());
-            case CANVAS_SIZE -> new CanvasSizeNode(data.id(), data.x(), data.y(), data.inputs(), data.outputs(), data.width(), data.height(), data.inputArray(), data.outputArray());
-            case SAVE -> new SaveNode(data.id(), data.x(), data.y(), data.inputs(), data.outputs(), data.width(), data.height(), data.inputArray(), data.outputArray());
-            case SCANNER -> new SurfaceScannerNode(data.id(), data.x(), data.y(), data.inputs(), data.outputs(), data.width(), data.height(), data.inputArray(), data.outputArray());
-            case SCANNER_PIXEL -> new ScannerPixelNode(data.id(), data.x(), data.y(), data.inputs(), data.outputs(), data.width(), data.height(), data.inputArray(), data.outputArray());
-            case SCANNER_STATS -> new ScannerStats(data.id(), data.x(), data.y(), data.inputs(), data.outputs(), data.width(), data.height(), data.inputArray(), data.outputArray());
-            case STRING -> new StringNode(data.id(),data.x(), data.y(), data.inputs(), data.outputs(), data.width(), data.height(), data.inputArray(), data.outputArray());
-            case CONCAT -> new ConcatStringNode(data.id(), data.x(), data.y(), data.inputs(), data.outputs(), data.width(), data.height(), data.inputArray(), data.outputArray());
-            case VIEW_STRING -> new ViewStringNode(data.id(), data.x(), data.y(), data.inputs(), data.outputs(), data.width(), data.height(), data.inputArray(), data.outputArray());
-            case STRING_EQUALS -> new StringEqualsNode(data.id(),data.x(), data.y(), data.inputs(), data.outputs(), data.width(), data.height(), data.inputArray(), data.outputArray());
-            case DRAW_SCAN -> new DrawScanNode(data.id(), data.x(), data.y(), data.inputs(), data.outputs(), data.width(), data.height(), data.inputArray(), data.outputArray());
-            case BOOLEAN_FLOAT -> new BooleanFloatNode(data.id(), data.x(), data.y(), data.inputs(), data.outputs(), data.width(), data.height(), data.inputArray(), data.outputArray());
-            case DISTANCE_BRIGHTNESS -> new DistanceBrightnessNode(data.id(),data.x(), data.y(), data.inputs(), data.outputs(), data.width(), data.height(), data.inputArray(), data.outputArray());
-            case ID_CONSTANT -> new ItemConstantNode(data.id(), data.x(), data.y(), data.inputs(), data.outputs(), data.width(), data.height(), data.inputArray(), data.outputArray());
-            case NOT -> new NotNode(data.id(), data.x(), data.y(), data.inputs(), data.outputs(), data.width(), data.height(), data.inputArray(), data.outputArray());
-        };
+    public static Node createNodeByData(NodesData data) {
+        Node node = data.nodeType().create(data);
         node.setExtraData(data.extraData());
         return node;
     }
+
     public static void drawThreeSlice(GuiGraphics graphics, ResourceLocation left, ResourceLocation center, ResourceLocation right, int x, int y, int width, int textureHeight, int border) {
 
         int centerWidth = width - border * 2;

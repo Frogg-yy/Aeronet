@@ -616,7 +616,7 @@ public class ServerBlockEntity extends BlockEntity {
                 }
             }
         }
-        if (packet.getType().equals(PacketType.SCANNER))
+        else if (packet.getType().equals(PacketType.SCANNER))
         {
             for (Node node : nodes)
             {
@@ -625,6 +625,19 @@ public class ServerBlockEntity extends BlockEntity {
                     if (packet.getSenderId().equals(scannerNode.getLinkName()))
                     {
                         scannerNode.receiveSignal(packet.getValue());
+                    }
+                }
+            }
+        }
+        else if (packet.getType().equals(PacketType.BUTTON))
+        {
+            for (Node node : nodes)
+            {
+                if (node instanceof ButtonNode buttonNode)
+                {
+                    if (packet.getSenderId().equals(buttonNode.getLinkName()))
+                    {
+                        buttonNode.receiveSignal(((Boolean) packet.getValue()).booleanValue());
                     }
                 }
             }

@@ -37,4 +37,9 @@ public class ModBlockEntities {
             BLOCK_ENTITIES.register("surface_scanner_block_entity",
                     () -> BlockEntityType.Builder.of(SurfaceScannerBlockEntity::new, ModBlocks.SCANNER.get()).build(null));
 
+    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<ButtonBlockEntity>> BUTTON_BLOCK_ENTITY =
+            BLOCK_ENTITIES.register("button_block_entity",
+                    () -> BlockEntityType.Builder.of(ButtonBlockEntity::new, ModBlocks.BUTTON.get()).build(null));
+
+
 }

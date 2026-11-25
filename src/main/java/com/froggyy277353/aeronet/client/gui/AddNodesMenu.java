@@ -31,8 +31,11 @@ public class AddNodesMenu {
             // boolean
             "boolean.boolean_float",
             "boolean.not",
+            "boolean.and",
+            "boolean.or",
+            "boolean.xor",
             // physical
-            "physical.analog_link", "physical.gearshift", "physical.servo",
+            "physical.analog_link", "physical.gearshift", "physical.servo", "physical.button",
             "physical.scanner.scanner", "physical.scanner.scanner_pixel", "physical.scanner.scanner_stats",
             "physical.display.display", "physical.display.canvas_size", "physical.display.draw_pixel",
             "physical.display.draw_line", "physical.display.draw_rect", "physical.display.draw_circle",

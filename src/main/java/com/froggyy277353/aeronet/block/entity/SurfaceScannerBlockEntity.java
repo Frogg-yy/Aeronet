@@ -51,7 +51,7 @@ public class SurfaceScannerBlockEntity extends AnalogDeviceBE {
     private int gridSize = 16;
     private float fov = 45F;
     private int maxDistance = 64;
-    private float currentBeamDist = 12.0f;
+    private float currentBeamDist = 0.0f;
     private float prevBeamDist = 12.0f;
     private boolean on = false;
     private boolean ignoreTrans = true;
@@ -165,6 +165,8 @@ public class SurfaceScannerBlockEntity extends AnalogDeviceBE {
                             this.ignoreTrans = newIgnoreTrans;
                             this.on = newOn;
                             this.lastSentMatrix = null;
+                            currentBeamDist = 0.0f;
+                            prevBeamDist = 0.0f;
 
                             setChanged();
                             if (!level.isClientSide) {

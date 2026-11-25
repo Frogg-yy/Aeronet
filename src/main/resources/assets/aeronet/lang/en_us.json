@@ -151,5 +151,12 @@
 
   "aeronet.node.boolean_float": "Boolean to float",
   "aeronet.nodemenu.boolean": "Boolean",
-  "aeronet.node.not": "Not"
+  "aeronet.node.boolean": "Boolean",
+  "aeronet.node.not": "NOT",
+  "aeronet.node.and": "AND",
+  "aeronet.node.or": "OR",
+  "aeronet.node.xor": "XOR",
+
+  "block.aeronet.button": "Button",
+  "aeronet.node.button": "Button"
 }

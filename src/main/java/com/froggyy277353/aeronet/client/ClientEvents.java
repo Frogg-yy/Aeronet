@@ -58,6 +58,7 @@ public class ClientEvents {
     public static void onRegisterRenderBuffers(RegisterRenderBuffersEvent event) {
         event.registerRenderBuffer(SurfaceScannerRenderer.ScannerRenderTypes.SCAN_PYRAMID);
     }
+
     public static void receiveLinkSync(LinkSyncPayload payload) {
         Minecraft mc = Minecraft.getInstance();
         if (mc.level == null) return;
@@ -267,16 +268,22 @@ public class ClientEvents {
     public static final ModelResourceLocation SCANNER_SENSOR_MODEL = ModelResourceLocation.standalone(
             ResourceLocation.fromNamespaceAndPath("aeronet", "block/surface_scanner/sensor")
     );
+    public static final ModelResourceLocation BUTTON_MODEL = ModelResourceLocation.standalone(
+            ResourceLocation.fromNamespaceAndPath("aeronet", "block/button/button_bb")
+    );
     @SubscribeEvent
     public static void onRegisterModels(ModelEvent.RegisterAdditional event) {
         event.register(SCANNER_SENSOR_MODEL);
+        event.register(BUTTON_MODEL);
     }
     @SubscribeEvent
     public static void onRegisterRenderers(EntityRenderersEvent.RegisterRenderers event) {
         event.registerBlockEntityRenderer(
                 ModBlockEntities.SCANNER_BLOCK_ENTITY.get(),
-                SurfaceScannerRenderer::new
-        );
+                SurfaceScannerRenderer::new);
+        event.registerBlockEntityRenderer(
+                ModBlockEntities.BUTTON_BLOCK_ENTITY.get(),
+                ButtonRenderer::new);
     }
 
 }
